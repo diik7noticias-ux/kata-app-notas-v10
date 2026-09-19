@@ -66,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: ValueListenableBuilder<Box<Task>>(
         valueListenable: taskBox.listenable(),
         builder: (context, box, _) {
-          final tasks = box.values.toList()..sort((a, b) => b.isCompleted.compareTo(a.isCompleted));
+          final tasks = box.values.toList()..sort((a, b) => (b.isCompleted ? 1 : 0).compareTo(a.isCompleted ? 1 : 0));
           return ListView.builder(
             itemCount: tasks.length,
             itemBuilder: (context, index) {
