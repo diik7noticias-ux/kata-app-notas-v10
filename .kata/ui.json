@@ -1,0 +1,31 @@
+{
+  "screen": "home_screen",
+  "kind": "list",
+  "topBar": {
+    "title": "Notas V10",
+    "actions": [
+      {
+        "type": "icon_button",
+        "icon": "refresh",
+        "action": "refresh_list"
+      }
+    ]
+  },
+  "body": {
+    "type": "empty",
+    "message": "App gerada pelo KATA."
+  },
+  "fab": {
+    "icon": "+",
+    "visible": false
+  },
+  "colors": {
+    "primary": "#1BB9BE",
+    "background": "#F8FAFC",
+    "text": "#000000",
+    "checkbox_active": "#1BB9BE",
+    "checkbox_inactive": "#FFFFFF",
+    "dismissible_background": "#FF0000",
+    "dismissible_icon": "#FFFFFF"
+  }
+}
